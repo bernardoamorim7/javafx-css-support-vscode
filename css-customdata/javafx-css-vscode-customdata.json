@@ -1,0 +1,906 @@
+{
+    "$schema": "https://github.com/microsoft/vscode-css-languageservice/raw/main/docs/customData.schema.json",
+    "version": 1.1,
+    "properties": [
+        {
+            "name": "-fx-font",
+            "description": "Values: <font>\n\nDefault: inherit\n\nComments: shorthand property for font-size, font-family, font-weight and font-style"
+        },
+        {
+            "name": "-fx-font-family",
+            "description": "Values: <font-family>\n\nDefault: inherit\n\nComments: "
+        },
+        {
+            "name": "-fx-font-size",
+            "description": "Values: <font-size>\n\nDefault: inherit\n\nComments: "
+        },
+        {
+            "name": "-fx-font-style",
+            "description": "Values: <font-style>\n\nDefault: inherit\n\nComments: "
+        },
+        {
+            "name": "-fx-font-weight",
+            "description": "Values: <font-weight>\n\nDefault: inherit\n\nComments: "
+        },
+        {
+            "name": "-fx-blend-mode",
+            "description": "Values: [ add | blue | color-burn | color-dodge | darken | difference | exclusion | green | hard-light | lighten | multiply | overlay | red | screen | soft-light | src-atop | src-in | src-out | src-over ]\n\nDefault: null\n\nRange: \n\nComments: "
+        },
+        {
+            "name": "-fx-cursor",
+            "description": "Values: [ null | crosshair | default | hand | move | e-resize | h-resize | ne-resize | nw-resize | n-resize | se-resize | sw-resize | s-resize | w-resize | v-resize | text | wait ] | <url>\n\nDefault: null\n\nRange: \n\nComments: inherits"
+        },
+        {
+            "name": "-fx-effect",
+            "description": "Values: <effect>\n\nDefault: null\n\nRange: \n\nComments: "
+        },
+        {
+            "name": "-fx-focus-traversable",
+            "description": "Values: <boolean>\n\nDefault: false\n\nRange: \n\nComments: The default value for controls is true, although there are some exceptions. See Controls for details."
+        },
+        {
+            "name": "-fx-view-order",
+            "description": "Values: <number>\n\nDefault: 0\n\nRange: \n\nComments: This property is used to alter the rendering and picking order of a node within its parent without reordering the parent's children list. The parent traverses its children in decreasing viewOrder order."
+        },
+        {
+            "name": "-fx-opacity",
+            "description": "Values: <number>\n\nDefault: 1\n\nRange: [0.0 ... 1.0]\n\nComments: Opacity can be thought of conceptually as a postprocessing operation. Conceptually, after the node (including its descendants) is rendered into an RGBA offscreen image, the opacity setting specifies how to blend the offscreen rendering into the current composite rendering."
+        },
+        {
+            "name": "-fx-rotate",
+            "description": "Values: <number>\n\nDefault: 0\n\nRange: \n\nComments: This is the angle of the rotation in degrees. Zero degrees is at 3 o'clock (directly to the right). Angle values are positive clockwise. Rotation is about the center."
+        },
+        {
+            "name": "-fx-scale-x",
+            "description": "Values: <number>\n\nDefault: 1\n\nRange: \n\nComments: scale about the center"
+        },
+        {
+            "name": "-fx-scale-y",
+            "description": "Values: <number>\n\nDefault: 1\n\nRange: \n\nComments: scale about the center"
+        },
+        {
+            "name": "-fx-scale-z",
+            "description": "Values: <number>\n\nDefault: 1\n\nRange: \n\nComments: scale about the center"
+        },
+        {
+            "name": "-fx-translate-x",
+            "description": "Values: <number>\n\nDefault: 0\n\nRange: \n\nComments: "
+        },
+        {
+            "name": "-fx-translate-y",
+            "description": "Values: <number>\n\nDefault: 0\n\nRange: \n\nComments: "
+        },
+        {
+            "name": "-fx-translate-z",
+            "description": "Values: <number>\n\nDefault: 0\n\nRange: \n\nComments: "
+        },
+        {
+            "name": "-fx-image",
+            "description": "Values: <uri>\n\nDefault: null\n\nComments: Relative URLs are resolved against the URL of the stylesheet."
+        },
+        {
+            "name": "-fx-graphic",
+            "description": "Values: <uri>\n\nDefault: null\n\nComments: "
+        },
+        {
+            "name": "-fx-hgap",
+            "description": "Values: <size>\n\nDefault: 0\n\nComments: "
+        },
+        {
+            "name": "-fx-vgap",
+            "description": "Values: <size>\n\nDefault: 0\n\nComments: "
+        },
+        {
+            "name": "-fx-alignment",
+            "description": "Values: [ top-left | top-center | top-right | center-left | center | center-right bottom-left | bottom-center | bottom-right | baseline-left | baseline-center | baseline-right ]\n\nDefault: top-left\n\nComments: "
+        },
+        {
+            "name": "-fx-column-halignment",
+            "description": "Values: [ left | center | right ]\n\nDefault: left\n\nComments: "
+        },
+        {
+            "name": "-fx-row-valignment",
+            "description": "Values: [ top | center | baseline | bottom ]\n\nDefault: center\n\nComments: "
+        },
+        {
+            "name": "-fx-orientation",
+            "description": "Values: [ horizontal | vertical ]\n\nDefault: horizontal\n\nComments: "
+        },
+        {
+            "name": "-fx-hgap",
+            "description": "Values: <size>\n\nDefault: 0\n\nComments: \n\n: "
+        },
+        {
+            "name": "-fx-vgap",
+            "description": "Values: <size>\n\nDefault: 0\n\nComments: \n\n: "
+        },
+        {
+            "name": "-fx-alignment",
+            "description": "Values: [ top-left | top-center | top-right | center-left | center | center-right bottom-left | bottom-center | bottom-right | baseline-left | baseline-center | baseline-right ]\n\nDefault: top-left\n\nComments: \n\n: "
+        },
+        {
+            "name": "-fx-grid-lines-visible",
+            "description": "Values: <boolean>\n\nDefault: false\n\nComments: \n\n: "
+        },
+        {
+            "name": "-fx-spacing",
+            "description": "Values: <size>\n\nDefault: 0\n\nComments: "
+        },
+        {
+            "name": "-fx-alignment",
+            "description": "Values: [ top-left | top-center | top-right | center-left | center | center-right bottom-left | bottom-center | bottom-right | baseline-left | baseline-center | baseline-right ]\n\nDefault: top-left\n\nComments: "
+        },
+        {
+            "name": "-fx-fill-height",
+            "description": "Values: <boolean>\n\nDefault: true\n\nComments: "
+        },
+        {
+            "name": "-fx-region-background",
+            "description": "Values: javafx.scene.layout.Background\n\nDefault: null\n\nComments: This cannot be set directly from CSS but is created from the property values of -fx-background-color, -fx-background-image, -fx-background-insets, -fx-background-position, -fx-background-radius, -fx-background-repeat, -fx-background-size"
+        },
+        {
+            "name": "-fx-background-color",
+            "description": "Values: <paint> [ , <paint> ]*\n\nDefault: transparent\n\nComments: A series of paint values separated by commas."
+        },
+        {
+            "name": "-fx-background-insets",
+            "description": "Values: <size> | <size> <size> <size> <size> [ , [ <size> | <size> <size> <size> <size>] ]*\n\nDefault: 0 0 0 0\n\nComments: A series of size values or sets of four size values, separated by commas. A single size value means all insets are the same. Otherwise, the four values for each inset are given in the order top, right, bottom, left. Each comma-separated value or set of values in the series applies to the corresponding background color."
+        },
+        {
+            "name": "-fx-background-radius",
+            "description": "Values: [<size>]{1,4} [ / [<size>]{1,4} ]? [ , [<size>]{1,4} [ / [<size>]{1,4} ]? ]*\n\nDefault: 0 0 0 0\n\nComments: The same syntax and semenatics as CSS Backgrounds and Borders Module Level 3: Curve Radii applies to -fx-background-radius. Note that JavaFX supports only the short-hand syntax. Each comma-separated value or set of values in the series applies to the corresponding background color."
+        },
+        {
+            "name": "-fx-background-image",
+            "description": "Values: <uri> [ , <uri> ]*\n\nDefault: null\n\nComments: A series of image URIs separated by commas."
+        },
+        {
+            "name": "-fx-background-position",
+            "description": "Values: <bg-position> [ , <bg-position> ]* where <bg-position> = [     [ [ <size> | left | center | right ] [ <size> | top | center | bottom ]? ]     | [ [ center | [ left | right ] <size>? ] || [ center | [ top | bottom ] <size>? ] ]\n\nDefault: 0% 0%\n\nComments: A series of <bg-position> values separated by commas. Each bg-position item in the series applies to the corresponding image in the background-image series."
+        },
+        {
+            "name": "-fx-background-repeat",
+            "description": "Values: <repeat-style> [ , <repeat-style> ]* where <repeat-style> = repeat-x | repeat-y | [repeat | space | round | stretch | no-repeat]{1,2}\n\nDefault: repeat repeat\n\nComments: A series of <repeat-style> values separated by commas. Each repeat-style item in the series applies to the corresponding image in the background-image series."
+        },
+        {
+            "name": "-fx-background-size",
+            "description": "Values: <bg-size> [ , <bg-size> ]* <bg-size> = [ <size> | auto ]{1,2} | cover | contain | stretch\n\nDefault: auto auto\n\nComments: A series of <bg-size> values separated by commas. Each bg-size item in the series applies to the corresponding image in the background-image series."
+        },
+        {
+            "name": "-fx-region-border",
+            "description": "Values: javafx.scene.layout.Border\n\nDefault: null\n\nComments: This cannot be set directly from CSS but is created from the property values of -fx-border-color, -fx-border-insets, -fx-border-radius,  -fx-border-style, -fx-border-width, -fx-border-image-insets, -fx-border-image-repeat, -fx-border-image-slice, -fx-border-image-source, -fx-border-image-width"
+        },
+        {
+            "name": "-fx-border-color",
+            "description": "Values: <paint> | <paint> <paint> <paint> <paint> [ , [<paint> | <paint> <paint> <paint> <paint>] ]*\n\nDefault: null\n\nComments: A series of paint values or sets of four paint values, separated by commas. For each item in the series, if a single paint value is specified, then that paint is used as the border for all sides of the region; and if a set of four paints is specified, they are used for the top, right, bottom, and left borders of the region, in that order. If the border is not rectangular, only the first paint value in the set is used."
+        },
+        {
+            "name": "-fx-border-insets",
+            "description": "Values: <size> | <size> <size> <size> <size> [ , [ <size> | <size> <size> <size> <size>] ]*\n\nDefault: null\n\nComments: A series of inset or sets of four inset values, separated by commas. For each item in the series, a single inset value means that all insets are the same; and if a set of four inset values is specified, they are used for the top, right, bottom, and left edges of the region, in that order. Each item in the series of insets applies to the corresponding item in the series of border colors."
+        },
+        {
+            "name": "-fx-border-radius",
+            "description": "Values: [<size>]{1,4} [ / [<size>]{1,4} ]? [ , [<size>]{1,4} [ / [<size>]{1,4} ]? ]*\n\nDefault: null\n\nComments: Refer to CSS Backgrounds and Borders Module Level 3: Curve Radii. JavaFX supports only the short-hand syntax. Each comma-separated value or set of values in the series applies to the corresponding border color."
+        },
+        {
+            "name": "-fx-border-style",
+            "description": "Values: <border-style> [ , <border-style> ]* where <border-style> = <dash-style> [phase <number>]? [centered | inside | outside]? [line-join [miter <number> | bevel | round]]? [line-cap [square | butt | round]]? where <dash-style> = [ none | solid | dotted | dashed | segments( <number>, <number> [, <number>]*) ]\n\nDefault: null\n\nComments: A series of border style values, separated by commas. Each item in the series applies to the corresponding item in the series of border colors. The segments dash-style defines a sequence representing the lengths of the dash segments. Alternate entries in the sequence represent the lengths of the opaque and transparent segments of the dashes. This corresponds to the strokeDashArray variable of Shape. The optional phase parameter defines the point in the dashing pattern that will correspond to the beginning of the stroke. This corresponds to the strokeDashOffset variable of Shape."
+        },
+        {
+            "name": "-fx-border-width",
+            "description": "Values: <size> | <size> <size> <size> <size> [ , [ <size> | <size> <size> <size> <size>] ]*\n\nDefault: null\n\nComments: A series of width or sets of four width values, separated by commas. For each item in the series, a single width value means that all border widths are the same; and if a set of four width values is specified, they are used for the top, right, bottom, and left border widths, in that order. If the border is not rectangular, only the first width value is used. Each item in the series of widths applies to the corresponding item in the series of border colors."
+        },
+        {
+            "name": "-fx-border-image-source",
+            "description": "Values: <uri> [ , <uri> ]*\n\nDefault: null\n\nComments: A series of image URIs, separated by commas."
+        },
+        {
+            "name": "-fx-border-image-insets",
+            "description": "Values: <size> | <size> <size> <size> <size> [ , [ <size> | <size> <size> <size> <size>] ]*\n\nDefault: 0 0 0 0\n\nComments: A series of inset or sets of four inset values, separated by commas. For each item in the series, a single inset value means that all insets are the same; and if a set of four inset values is specified, they are used for the top, right, bottom, and left edges of the region, in that order. Each item in the series of insets applies to the corresponding image in the series of border images."
+        },
+        {
+            "name": "-fx-border-image-repeat",
+            "description": "Values: <repeat-style> [ , <repeat-style> ]* where <repeat-style> = repeat-x | repeat-y | [repeat | space | round | no-repeat]{1,2}\n\nDefault: repeat repeat\n\nComments: A series of repeat-style values, separated by commas. Each item in the series applies to the corresponding image in the series of border images."
+        },
+        {
+            "name": "-fx-border-image-slice",
+            "description": "Values: [<size> | <size> <size> <size> <size> ] fill? [ , [ <size> | <size> <size> <size> <size> <size> ] fill? ]*\n\nDefault: 100%\n\nComments: A series of image slice values or sets of four values, separated by commas. Each item in the series applies to the corresponding image in the series of border images. For each item in the series, if four values are given, they specify the size of the top, right, bottom, and left slices. This effectively divides the image into nine regions: an upper left corner, a top edge, an upper right corner, a right edge, a lower right corner, a bottom edge, a lower left corner, a left edge and a middle. If one value is specified, this value is used for the slice values for all four edges. If 'fill' is present, the middle slice is preserved, otherwise it is discarded. Percentage values may be used here, in which case the values are considered proportional to the source image."
+        },
+        {
+            "name": "-fx-border-image-width",
+            "description": "Values: <size> | <size> <size> <size> <size> [ , [ <size> | <size> <size> <size> <size>] ]*\n\nDefault: 1 1 1 1\n\nComments: A series of width or sets of four width values, separated by commas. For each item in the series, a single width value means that all border widths are the same; and if a set of four width values is specified, they are used for the top, right, bottom, and left border widths, in that order. If the border is not rectangular, only the first width value is used. Each item in the series of widths applies to the corresponding item in the series of border images. Percentage values may be used here, in which case the values are considered proportional to the border image area."
+        },
+        {
+            "name": "-fx-padding",
+            "description": "Values: <size> | <size> <size> <size> <size>\n\nDefault: 0 0 0 0\n\nComments: A sets of four padding values, separated by commas. For each item in the series, a single padding value means that all padding are the same; and if a set of four padding values is specified, they are used for the top, right, bottom, and left edges of the region, in that order."
+        },
+        {
+            "name": "-fx-position-shape",
+            "description": "Values: <boolean>\n\nDefault: true\n\nComments: If true means the shape centered within the region's width and height, otherwise the shape is positioned at its source position. Has no effect if a shape string is not specified."
+        },
+        {
+            "name": "-fx-scale-shape",
+            "description": "Values: <boolean>\n\nDefault: true\n\nComments: If true means the shape is scaled to fit the size of the region, otherwise the shape is at its source size, and its position depends on the value of the position-shape property. Has no effect if a shape string is not specified."
+        },
+        {
+            "name": "-fx-shape",
+            "description": "Values: \"<string>\"\n\nDefault: null\n\nComments: An SVG path string. By specifying a shape here the region takes on that shape instead of a rectangle or rounded rectangle. The syntax of this path string is specified in [3]."
+        },
+        {
+            "name": "-fx-snap-to-pixel",
+            "description": "Values: <boolean>\n\nDefault: true\n\nComments: Defines whether this region rounds position/spacing and ceils size values to pixel boundaries when laying out its children."
+        },
+        {
+            "name": "-fx-region-background",
+            "description": "Values: \n\nDefault: null\n\nComments: This property is set by specifying -fx-background-color and/or -fx-background-image. Optionally, the properties -fx-background-insets, -fx-background-radius, -fx-background-position, -fx-background-repeat, and -fx-background-size may also be set. In order to set the Region background to null, specify the style \"-fx-background-color: null; -fx-background-image: null;\". There is no shorthand notation for -fx-region-background at this time."
+        },
+        {
+            "name": "-fx-region-border",
+            "description": "Values: \n\nDefault: null\n\nComments: This property is set by specifying -fx-border-color and/or -fx-border-image. Optionally -fx-border-insets, -fx-border-radius, -fx-border-style, -fx-border-width, -fx-border-image-insets, -fx-border-image-repeat, -fx-border-image-slice and -fx-border-image-width may be specified. In order to set the Region background to null, specify the style \"-fx-border-color: null; -fx-border-image: null;\". There is no shorthand notation for -fx-region-border at this time."
+        },
+        {
+            "name": "-fx-min-height, -fx-pref-height, -fx-max-height",
+            "description": "Values: <size>\n\nDefault: -1\n\nComments: Percentage values are not useful since the actual value would be computed from the width and/or height of the Regions's parent before the parent is laid out."
+        },
+        {
+            "name": "-fx-min-width, -fx-pref-width, -fx-max-width",
+            "description": "Values: <size>\n\nDefault: -1\n\nComments: Percentage values are not useful since the actual value would be computed from the width and/or height of the Region's parent before the parent is laid out."
+        },
+        {
+            "name": "-fx-alignment",
+            "description": "Values: [ top-left | top-center | top-right | center-left | center | center-right bottom-left | bottom-center | bottom-right | baseline-left | baseline-center | baseline-right ]\n\nDefault: top-left\n\nComments: "
+        },
+        {
+            "name": "-fx-orientation",
+            "description": "Values: [ horizontal | vertical ]\n\nDefault: horizontal\n\nComments: "
+        },
+        {
+            "name": "-fx-pref-rows",
+            "description": "Values: <integer>\n\nDefault: 5\n\nComments: "
+        },
+        {
+            "name": "-fx-pref-columns",
+            "description": "Values: <integer>\n\nDefault: 5\n\nComments: "
+        },
+        {
+            "name": "-fx-pref-tile-width",
+            "description": "Values: <size>\n\nDefault: -1\n\nComments: "
+        },
+        {
+            "name": "-fx-pref-tile-height",
+            "description": "Values: <size>\n\nDefault: -1\n\nComments: "
+        },
+        {
+            "name": "-fx-hgap",
+            "description": "Values: <size>\n\nDefault: 0\n\nComments: "
+        },
+        {
+            "name": "-fx-vgap",
+            "description": "Values: <size>\n\nDefault: 0\n\nComments: "
+        },
+        {
+            "name": "-fx-alignment",
+            "description": "Values: [ top-left | top-center | top-right | center-left | center | center-right bottom-left | bottom-center | bottom-right | baseline-left | baseline-center | baseline-right ]\n\nDefault: top-left\n\nComments: "
+        },
+        {
+            "name": "-fx-tile-alignment",
+            "description": "Values: [ top-left | top-center | top-right | center-left | center | center-right bottom-left | bottom-center | bottom-right | baseline-left | baseline-center | baseline-right ]\n\nDefault: center\n\nComments: "
+        },
+        {
+            "name": "-fx-spacing",
+            "description": "Values: <size>\n\nDefault: 0\n\nComments: "
+        },
+        {
+            "name": "-fx-alignment",
+            "description": "Values: [ top-left | top-center | top-right | center-left | center | center-right bottom-left | bottom-center | bottom-right | baseline-left | baseline-center | baseline-right ]\n\nDefault: top-left\n\nComments: "
+        },
+        {
+            "name": "-fx-fill-width",
+            "description": "Values: <boolean>\n\nDefault: true\n\nComments: "
+        },
+        {
+            "name": "-fx-fill",
+            "description": "Values: <paint>\n\nDefault: BLACK\n\nComments: "
+        },
+        {
+            "name": "-fx-smooth",
+            "description": "Values: <boolean>\n\nDefault: true\n\nComments: "
+        },
+        {
+            "name": "-fx-stroke",
+            "description": "Values: <paint>\n\nDefault: null\n\nComments: "
+        },
+        {
+            "name": "-fx-stroke-type",
+            "description": "Values: [ inside | outside | centered ]\n\nDefault: centered\n\nComments: "
+        },
+        {
+            "name": "-fx-stroke-dash-array",
+            "description": "Values: <size>[ <size>]+\n\nDefault: see comment\n\nComments: The initial value is that of an empty array, effectively a solid line."
+        },
+        {
+            "name": "-fx-stroke-dash-offset",
+            "description": "Values: <number>\n\nDefault: 0\n\nComments: "
+        },
+        {
+            "name": "-fx-stroke-line-cap",
+            "description": "Values: [ square | butt | round ]\n\nDefault: square\n\nComments: "
+        },
+        {
+            "name": "-fx-stroke-line-join",
+            "description": "Values: [ miter | bevel | round ]\n\nDefault: miter\n\nComments: "
+        },
+        {
+            "name": "-fx-stroke-miter-limit",
+            "description": "Values: <number>\n\nDefault: 10\n\nComments: "
+        },
+        {
+            "name": "-fx-stroke-width",
+            "description": "Values: <size>\n\nDefault: 1\n\nComments: "
+        },
+        {
+            "name": "-fx-fill",
+            "description": "Values: <paint>\n\nDefault: null\n\nComments: "
+        },
+        {
+            "name": "-fx-stroke",
+            "description": "Values: <paint>\n\nDefault: black\n\nComments: "
+        },
+        {
+            "name": "-fx-fill",
+            "description": "Values: <paint>\n\nDefault: null\n\nComments: "
+        },
+        {
+            "name": "-fx-stroke",
+            "description": "Values: <paint>\n\nDefault: black\n\nComments: "
+        },
+        {
+            "name": "-fx-arc-height",
+            "description": "Values: <size>\n\nDefault: 0\n\nComments: "
+        },
+        {
+            "name": "-fx-arc-width",
+            "description": "Values: <size>\n\nDefault: 0\n\nComments: "
+        },
+        {
+            "name": "-fx-font",
+            "description": "Values: <font>\n\nDefault: Font.DEFAULT\n\nComments: inherits"
+        },
+        {
+            "name": "-fx-font-smoothing-type",
+            "description": "Values: [ gray | lcd ]\n\nDefault: gray\n\nComments: "
+        },
+        {
+            "name": "-fx-strikethrough",
+            "description": "Values: <boolean>\n\nDefault: false\n\nComments: "
+        },
+        {
+            "name": "-fx-tab-size",
+            "description": "Values: <integer>\n\nDefault: 8\n\nComments: "
+        },
+        {
+            "name": "-fx-text-alignment",
+            "description": "Values: [ left | center | right | justify ]\n\nDefault: left\n\nComments: inherits"
+        },
+        {
+            "name": "-fx-text-origin",
+            "description": "Values: [ baseline | top | bottom ]\n\nDefault: baseline\n\nComments: "
+        },
+        {
+            "name": "-fx-underline",
+            "description": "Values: <boolean>\n\nDefault: false\n\nComments: "
+        },
+        {
+            "name": "-fx-context-menu-enabled",
+            "description": "Values: <boolean>\n\nDefault: true\n\nComments: "
+        },
+        {
+            "name": "-fx-font-smoothing-type",
+            "description": "Values: [ gray | lcd ]\n\nDefault: lcd\n\nComments: "
+        },
+        {
+            "name": "-fx-font-scale",
+            "description": "Values: <number>\n\nDefault: 1\n\nComments: "
+        },
+        {
+            "name": "-fx-min-width",
+            "description": "Values: <size>\n\nDefault: 0\n\nComments: "
+        },
+        {
+            "name": "-fx-min-height",
+            "description": "Values: <size>\n\nDefault: 0\n\nComments: "
+        },
+        {
+            "name": "-fx-pref-width",
+            "description": "Values: <size>\n\nDefault: 800\n\nComments: "
+        },
+        {
+            "name": "-fx-pref-height",
+            "description": "Values: <size>\n\nDefault: 600\n\nComments: "
+        },
+        {
+            "name": "-fx-max-width",
+            "description": "Values: <size>\n\nDefault: Double.MAX_VALUE\n\nComments: "
+        },
+        {
+            "name": "-fx-max-height",
+            "description": "Values: <size>\n\nDefault: Double.MAX_VALUE\n\nComments: "
+        },
+        {
+            "name": "-fx-cell-size",
+            "description": "Values: <size>\n\nDefault: 24\n\nComments: The cell size. For vertical ListView or a TreeView or TableView this is the height, for a horizontal ListView this is the width."
+        },
+        {
+            "name": "-fx-color-label-visible",
+            "description": "Values: <boolean>\n\nDefault: true\n\nComments: "
+        },
+        {
+            "name": "-fx-skin",
+            "description": "Values: <string>\n\nDefault: null\n\nComments: The class name of the Control's Skin."
+        },
+        {
+            "name": "-fx-focus-traversable",
+            "description": "Values: <boolean>\n\nDefault: true\n\nComments: Control sets the default value of the focusTraversable property to true. The default value of the focusTraversable property for the following controls is false: Accordion, Cell, Label, MenuBar, ProgressBar, ProgressIndicator, ScrollBar, ScrollPane, Separator, SplitPane, ToolBar."
+        },
+        {
+            "name": "-fx-show-week-numbers",
+            "description": "Values: <boolean>\n\nDefault: true if the resource bundle property \"DatePicker.showWeekNumbers\" contains the country code.\n\nComments: "
+        },
+        {
+            "name": "-fx-cursor",
+            "description": "Values: [ null | crosshair | default | hand | move | e-resize | h-resize | ne-resize | nw-resize | n-resize | se-resize | sw-resize | s-resize | w-resize | v-resize | text | wait ] | <url>\n\nDefault: hand\n\nComments: inherits"
+        },
+        {
+            "name": "-fx-alignment",
+            "description": "Values: [ top-left | top-center | top-right | center-left | center | center-right bottom-left | bottom-center | bottom-right | baseline-left | baseline-center | baseline-right ]\n\nDefault: center-left\n\nComments: "
+        },
+        {
+            "name": "-fx-text-alignment",
+            "description": "Values: [ left | center | right | justify ]\n\nDefault: left\n\nComments: text-align from CSS spec maps to textAlignment in JavaFX"
+        },
+        {
+            "name": "-fx-text-overrun",
+            "description": "Values: [ center-ellipsis | center-word-ellipsis | clip | ellipsis | leading-ellipsis | leading-word-ellipsis | word-ellipsis ]\n\nDefault: ellipsis\n\nComments: "
+        },
+        {
+            "name": "-fx-wrap-text",
+            "description": "Values: <boolean>\n\nDefault: false\n\nComments: "
+        },
+        {
+            "name": "-fx-font",
+            "description": "Values: <font>\n\nDefault: platform dependent\n\nComments: inheritsThe initial value is that of Font.getDefault()"
+        },
+        {
+            "name": "-fx-underline",
+            "description": "Values: <boolean>\n\nDefault: false\n\nComments: "
+        },
+        {
+            "name": "-fx-graphic",
+            "description": "Values: <uri>\n\nDefault: null\n\nComments: "
+        },
+        {
+            "name": "-fx-content-display",
+            "description": "Values: [ top | right | bottom | left | center | right | graphic-only | text-only ]\n\nDefault: left\n\nComments: "
+        },
+        {
+            "name": "-fx-graphic-text-gap",
+            "description": "Values: <size>\n\nDefault: 4\n\nComments: "
+        },
+        {
+            "name": "-fx-label-padding",
+            "description": "Values: <size> | <size> <size> <size> <size>\n\nDefault: [0,0,0,0]\n\nComments: "
+        },
+        {
+            "name": "-fx-text-fill",
+            "description": "Values: <paint>\n\nDefault: black\n\nComments: "
+        },
+        {
+            "name": "-fx-ellipsis-string",
+            "description": "Values: <string>\n\nDefault: ...\n\nComments: "
+        },
+        {
+            "name": "-fx-orientation",
+            "description": "Values: [ horizontal | vertical ]\n\nDefault: vertical\n\nComments: "
+        },
+        {
+            "name": "-fx-use-system-menu-bar",
+            "description": "Values: <boolean>\n\nDefault: false\n\nComments: "
+        },
+        {
+            "name": "-fx-max-page-indicator-count",
+            "description": "Values: <number>\n\nDefault: 10\n\nComments: "
+        },
+        {
+            "name": "-fx-arrows-visible",
+            "description": "Values: <boolean>\n\nDefault: true\n\nComments: "
+        },
+        {
+            "name": "-fx-tooltip-visible",
+            "description": "Values: <boolean>\n\nDefault: false\n\nComments: When set to true, a tooltip which shows the page number is set on the page indicators. This property controls whether or not the tooltip is visible on the page indicators and does not affect the visibility of the tooltip set or installed on the Pagination control itself."
+        },
+        {
+            "name": "-fx-page-information-visible",
+            "description": "Values: <boolean>\n\nDefault: true\n\nComments: "
+        },
+        {
+            "name": "-fx-page-information-alignment",
+            "description": "Values: [ top | bottom | left | right ]\n\nDefault: bottom\n\nComments: "
+        },
+        {
+            "name": "-fx-indeterminate-bar-length",
+            "description": "Values: <number>\n\nDefault: 60\n\nComments: "
+        },
+        {
+            "name": "-fx-indeterminate-bar-escape",
+            "description": "Values: <boolean>\n\nDefault: true\n\nComments: "
+        },
+        {
+            "name": "-fx-indeterminate-bar-flip",
+            "description": "Values: <boolean>\n\nDefault: true\n\nComments: "
+        },
+        {
+            "name": "-fx-indeterminate-bar-animation-time",
+            "description": "Values: <number>\n\nDefault: 2.0\n\nComments: "
+        },
+        {
+            "name": "-fx-indeterminate-segment-count",
+            "description": "Values: <number>\n\nDefault: 8\n\nComments: "
+        },
+        {
+            "name": "-fx-progress-color",
+            "description": "Values: <paint>\n\nDefault: null\n\nComments: "
+        },
+        {
+            "name": "-fx-spin-enabled",
+            "description": "Values: <boolean>\n\nDefault: false\n\nComments: "
+        },
+        {
+            "name": "-fx-orientation",
+            "description": "Values: [ horizontal | vertical ]\n\nDefault: horizontal\n\nComments: "
+        },
+        {
+            "name": "-fx-block-increment",
+            "description": "Values: <number>\n\nDefault: 10\n\nComments: "
+        },
+        {
+            "name": "-fx-unit-increment",
+            "description": "Values: <number>\n\nDefault: 1\n\nComments: "
+        },
+        {
+            "name": "-fx-fit-to-width",
+            "description": "Values: <boolean>\n\nDefault: false\n\nComments: "
+        },
+        {
+            "name": "-fx-fit-to-height",
+            "description": "Values: <boolean>\n\nDefault: false\n\nComments: "
+        },
+        {
+            "name": "-fx-pannable",
+            "description": "Values: <boolean>\n\nDefault: false\n\nComments: "
+        },
+        {
+            "name": "-fx-hbar-policy",
+            "description": "Values: [ never | always | as-needed ]\n\nDefault: as-needed\n\nComments: "
+        },
+        {
+            "name": "-fx-vbar-policy",
+            "description": "Values: [ never | always | as-needed ]\n\nDefault: as-needed\n\nComments: "
+        },
+        {
+            "name": "-fx-orientation",
+            "description": "Values: [ horizontal | vertical ]\n\nDefault: horizontal\n\nComments: "
+        },
+        {
+            "name": "-fx-halignment",
+            "description": "Values: [ left | center | right ]\n\nDefault: center\n\nComments: "
+        },
+        {
+            "name": "-fx-valignment",
+            "description": "Values: [ top | center | baseline | bottom ]\n\nDefault: center\n\nComments: "
+        },
+        {
+            "name": "-fx-initial-delay",
+            "description": "Values: <duration>\n\nDefault: 300ms\n\nComments: "
+        },
+        {
+            "name": "-fx-repeat-delay",
+            "description": "Values: <duration>\n\nDefault: 60ms\n\nComments: "
+        },
+        {
+            "name": "-fx-orientation",
+            "description": "Values: [ horizontal | vertical ]\n\nDefault: horizontal\n\nComments: "
+        },
+        {
+            "name": "-fx-show-tick-labels",
+            "description": "Values: <boolean>\n\nDefault: false\n\nComments: "
+        },
+        {
+            "name": "-fx-show-tick-marks",
+            "description": "Values: <boolean>\n\nDefault: false\n\nComments: "
+        },
+        {
+            "name": "-fx-major-tick-unit",
+            "description": "Values: <number>\n\nDefault: 25\n\nComments: "
+        },
+        {
+            "name": "-fx-minor-tick-count",
+            "description": "Values: <integer>\n\nDefault: 3\n\nComments: "
+        },
+        {
+            "name": "-fx-show-tick-labels",
+            "description": "Values: <boolean>\n\nDefault: false\n\nComments: "
+        },
+        {
+            "name": "-fx-snap-to-ticks",
+            "description": "Values: <boolean>\n\nDefault: false\n\nComments: "
+        },
+        {
+            "name": "-fx-block-increment",
+            "description": "Values: <integer>\n\nDefault: 10\n\nComments: "
+        },
+        {
+            "name": "-fx-orientation",
+            "description": "Values: [ horizontal | vertical ]\n\nDefault: horizontal\n\nComments: "
+        },
+        {
+            "name": "-fx-tab-min-width",
+            "description": "Values: <integer>\n\nDefault: 0\n\nComments: "
+        },
+        {
+            "name": "-fx-tab-max-width",
+            "description": "Values: <integer>\n\nDefault: Double.MAX_VALUE\n\nComments: "
+        },
+        {
+            "name": "-fx-tab-min-height",
+            "description": "Values: <integer>\n\nDefault: 0\n\nComments: "
+        },
+        {
+            "name": "-fx-tab-max-height",
+            "description": "Values: <integer>\n\nDefault: Double.MAX_VALUE\n\nComments: "
+        },
+        {
+            "name": "-fx-open-tab-animation",
+            "description": "Values: [ grow | none ]\n\nDefault: grow\n\nComments: 'none' disables Tab opening animation"
+        },
+        {
+            "name": "-fx-close-tab-animation",
+            "description": "Values: [ grow | none ]\n\nDefault: grow\n\nComments: 'none' disables Tab closing animation"
+        },
+        {
+            "name": "-fx-size",
+            "description": "Values: <size>\n\nDefault: 20\n\nComments: The table column header size."
+        },
+        {
+            "name": "-fx-fixed-cell-size",
+            "description": "Values: <size>\n\nDefault: -1\n\nComments: A value greater than zero sets the fixed cell size of the table. A value of zero or less disables fixed cell size."
+        },
+        {
+            "name": "-fx-pref-column-count",
+            "description": "Values: number\n\nDefault: 40\n\nComments: "
+        },
+        {
+            "name": "-fx-pref-row-count",
+            "description": "Values: number\n\nDefault: 10\n\nComments: "
+        },
+        {
+            "name": "-fx-wrap-text",
+            "description": "Values: boolean\n\nDefault: false\n\nComments: "
+        },
+        {
+            "name": "-fx-font",
+            "description": "Values: <font>\n\nDefault: null\n\nComments: inherits"
+        },
+        {
+            "name": "-fx-text-fill",
+            "description": "Values: <paint>\n\nDefault: black\n\nComments: "
+        },
+        {
+            "name": "-fx-prompt-text-fill",
+            "description": "Values: <paint>\n\nDefault: gray\n\nComments: "
+        },
+        {
+            "name": "-fx-highlight-fill",
+            "description": "Values: <paint>\n\nDefault: dodgerblue\n\nComments: "
+        },
+        {
+            "name": "-fx-highlight-text-fill",
+            "description": "Values: <paint>\n\nDefault: white\n\nComments: "
+        },
+        {
+            "name": "-fx-display-caret",
+            "description": "Values: <boolean>\n\nDefault: true\n\nComments: "
+        },
+        {
+            "name": "-fx-alignment",
+            "description": "Values: [ top-left | top-center | top-right | center-left | center | center-right bottom-left | bottom-center | bottom-right | baseline-left | baseline-center | baseline-right ]\n\nDefault: center-left\n\nComments: "
+        },
+        {
+            "name": "-fx-pref-column-count",
+            "description": "Values: number\n\nDefault: 12\n\nComments: "
+        },
+        {
+            "name": "-fx-animated",
+            "description": "Values: <boolean>\n\nDefault: true\n\nComments: "
+        },
+        {
+            "name": "-fx-collapsible",
+            "description": "Values: <boolean>\n\nDefault: true\n\nComments: "
+        },
+        {
+            "name": "-fx-orientation",
+            "description": "Values: [ horizontal | vertical ]\n\nDefault: horizontal\n\nComments: "
+        },
+        {
+            "name": "-fx-text-alignment",
+            "description": "Values: [ left | center | right | justify ]\n\nDefault: left\n\nComments: "
+        },
+        {
+            "name": "-fx-text-overrun",
+            "description": "Values: [ center-ellipsis | center-word-ellipsis | clip | ellipsis | leading-ellipsis | leading-word-ellipsis | word-ellipsis ]\n\nDefault: ellipsis\n\nComments: "
+        },
+        {
+            "name": "-fx-wrap-text",
+            "description": "Values: <boolean>\n\nDefault: false\n\nComments: "
+        },
+        {
+            "name": "-fx-graphic",
+            "description": "Values: <uri>\n\nDefault: null\n\nComments: "
+        },
+        {
+            "name": "-fx-content-display",
+            "description": "Values: [ top | right | bottom | left | center | right | graphic-only | text-only ]\n\nDefault: left\n\nComments: "
+        },
+        {
+            "name": "-fx-graphic-text-gap",
+            "description": "Values: <size>\n\nDefault: 4\n\nComments: "
+        },
+        {
+            "name": "-fx-font",
+            "description": "Values: <font>\n\nDefault: Font.DEFAULT\n\nComments: inherits"
+        },
+        {
+            "name": "-fx-show-delay",
+            "description": "Values: <duration>\n\nDefault: 1000ms\n\nComments: "
+        },
+        {
+            "name": "-fx-show-duration",
+            "description": "Values: <duration>\n\nDefault: 5000ms\n\nComments: "
+        },
+        {
+            "name": "-fx-hide-delay",
+            "description": "Values: <duration>\n\nDefault: 200ms\n\nComments: "
+        },
+        {
+            "name": "-fx-indent",
+            "description": "Values: <size>\n\nDefault: 10\n\nComments: The amout of space to multiply by the treeItem.level to get the left margin"
+        },
+        {
+            "name": "-fx-fixed-cell-size",
+            "description": "Values: <size>\n\nDefault: Region.USE_COMPUTED_SIZE\n\nComments: If both -fx-cell-size and -fx-fixed-cell-size properties are specified in CSS, -fx-fixed-cell-size takes precedence."
+        },
+        {
+            "name": "-fx-fixed-cell-size",
+            "description": "Values: <size>\n\nDefault: Region.USE_COMPUTED_SIZE\n\nComments: If both -fx-cell-size and -fx-fixed-cell-size properties are specified in CSS, -fx-fixed-cell-size takes precedence."
+        },
+        {
+            "name": "-fx-side",
+            "description": "Values: Side\n\nDefault: null\n\nComments: "
+        },
+        {
+            "name": "-fx-tick-length",
+            "description": "Values: <size>\n\nDefault: 8\n\nComments: "
+        },
+        {
+            "name": "-fx-tick-label-font",
+            "description": "Values: <font>\n\nDefault: 8 system\n\nComments: "
+        },
+        {
+            "name": "-fx-tick-label-fill",
+            "description": "Values: <paint>\n\nDefault: black\n\nComments: "
+        },
+        {
+            "name": "-fx-tick-label-gap",
+            "description": "Values: <size>\n\nDefault: 3\n\nComments: "
+        },
+        {
+            "name": "-fx-tick-mark-visible",
+            "description": "Values: <boolean>\n\nDefault: true\n\nComments: "
+        },
+        {
+            "name": "-fx-tick-labels-visible",
+            "description": "Values: <boolean>\n\nDefault: true\n\nComments: "
+        },
+        {
+            "name": "-fx-bar-gap",
+            "description": "Values: <number>\n\nDefault: 4\n\nComments: "
+        },
+        {
+            "name": "-fx-category-gap",
+            "description": "Values: <number>\n\nDefault: 10\n\nComments: "
+        },
+        {
+            "name": "-fx-start-margin",
+            "description": "Values: <number>\n\nDefault: 5\n\nComments: The margin between the axis start and the first tick-mark"
+        },
+        {
+            "name": "-fx-end-margin",
+            "description": "Values: <number>\n\nDefault: 5\n\nComments: The margin between the axis start and the first tick-mark"
+        },
+        {
+            "name": "-fx-gap-start-and-end",
+            "description": "Values: <boolean>\n\nDefault: true\n\nComments: If this is true then half the space between ticks is left at the start and end"
+        },
+        {
+            "name": "-fx-legend-side",
+            "description": "Values: Side\n\nDefault: bottom\n\nComments: "
+        },
+        {
+            "name": "-fx-legend-visible",
+            "description": "Values: <boolean>\n\nDefault: true\n\nComments: "
+        },
+        {
+            "name": "-fx-title-side",
+            "description": "Values: Side\n\nDefault: top\n\nComments: "
+        },
+        {
+            "name": "-fx-create-symbols",
+            "description": "Values: <boolean>\n\nDefault: true\n\nComments: "
+        },
+        {
+            "name": "-fx-tick-unit",
+            "description": "Values: <number>\n\nDefault: 5\n\nComments: The value between each major tick mark in data units."
+        },
+        {
+            "name": "-fx-clockwise",
+            "description": "Values: <boolean>\n\nDefault: true\n\nComments: "
+        },
+        {
+            "name": "-fx-pie-label-visible",
+            "description": "Values: <boolean>\n\nDefault: true\n\nComments: "
+        },
+        {
+            "name": "-fx-label-line-length",
+            "description": "Values: <size>\n\nDefault: 20\n\nComments: "
+        },
+        {
+            "name": "-fx-start-angle",
+            "description": "Values: <number>\n\nDefault: 0\n\nComments: "
+        },
+        {
+            "name": "-fx-minor-tick-length",
+            "description": "Values: <size>\n\nDefault: 5\n\nComments: "
+        },
+        {
+            "name": "-fx-minor-tick-count",
+            "description": "Values: <size>\n\nDefault: 5\n\nComments: "
+        },
+        {
+            "name": "-fx-minor-tick-visible",
+            "description": "Values: <boolean>\n\nDefault: true\n\nComments: "
+        },
+        {
+            "name": "-fx-alternative-column-fill-visible",
+            "description": "Values: <boolean>\n\nDefault: true\n\nComments: "
+        },
+        {
+            "name": "-fx-alternative-row-fill-visible",
+            "description": "Values: <boolean>\n\nDefault: true\n\nComments: "
+        },
+        {
+            "name": "-fx-horizontal-grid-lines-visible",
+            "description": "Values: <boolean>\n\nDefault: true\n\nComments: "
+        },
+        {
+            "name": "-fx-horizontal-zero-line-visible",
+            "description": "Values: <boolean>\n\nDefault: true\n\nComments: "
+        },
+        {
+            "name": "-fx-vertical-grid-lines-visible",
+            "description": "Values: <boolean>\n\nDefault: true\n\nComments: "
+        },
+        {
+            "name": "-fx-vertical-zero-line-visible",
+            "description": "Values: <boolean>\n\nDefault: true\n\nComments: "
+        }
+    ]
+}

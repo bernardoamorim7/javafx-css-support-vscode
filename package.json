@@ -1,0 +1,23 @@
+{
+  "name": "javafx-css-support-vscode",
+  "displayName": "JavaFX CSS Support",
+  "description": "JavaFX CSS Support for JavaFX 17 in VS Code.\nGet autocomplete for -fx in CSS.",
+  "publisher": "Bernardo Amorim",
+  "license": "MIT",
+  "repository": {
+    "url": "https://github.com/bernardoamorim7/javafx-css-support"
+  },
+  "icon": "icon.ico",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.78.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "contributes": {
+    "css.customData": [
+      "css-customdata/javafx-css-vscode-customdata.json"
+    ]
+  }
+}

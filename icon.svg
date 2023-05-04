@@ -1,0 +1,16 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 153.59596252441406 155" width="153.59596252441406" height="155">
+  <!-- svg-source:excalidraw -->
+  
+  <defs>
+    <style class="style-fonts">
+      @font-face {
+        font-family: "Virgil";
+        src: url("https://excalidraw.com/Virgil.woff2");
+      }
+      @font-face {
+        font-family: "Cascadia";
+        src: url("https://excalidraw.com/Cascadia.woff2");
+      }
+    </style>
+  </defs>
+  <rect x="0" y="0" width="153.59596252441406" height="155" fill="#ffffff"></rect><g transform="translate(10 10) rotate(0 66.79798126220703 67.5)"><text x="66.79798126220703" y="0" font-family="Virgil, Segoe UI Emoji" font-size="36px" fill="#000000" text-anchor="middle" style="white-space: pre;" direction="ltr" dominant-baseline="text-before-edge">JavaFX</text><text x="66.79798126220703" y="45" font-family="Virgil, Segoe UI Emoji" font-size="36px" fill="#000000" text-anchor="middle" style="white-space: pre;" direction="ltr" dominant-baseline="text-before-edge">CSS</text><text x="66.79798126220703" y="90" font-family="Virgil, Segoe UI Emoji" font-size="36px" fill="#000000" text-anchor="middle" style="white-space: pre;" direction="ltr" dominant-baseline="text-before-edge">Support</text></g></svg>
