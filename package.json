@@ -8,16 +8,18 @@
     "url": "https://github.com/bernardoamorim7/javafx-css-support-vscode"
   },
   "icon": "icon.ico",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "engines": {
     "vscode": "^1.78.0"
   },
   "categories": [
     "Other"
   ],
-  "contributes": {
-    "css.customData": [
-      "css-customdata/javafx-css-vscode-customdata.json"
-    ]
-  }
+	"contributes": {
+		"css": {
+			"customData": [
+				"css-customdata/javafx-css-vscode-customdata.json"
+			]
+		}
+	}
 }
