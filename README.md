@@ -15,4 +15,18 @@ To disable the vendorPrefix warning, add the following to your Workspace's setti
 
 ---
 
+### Add errors or warning to unkwnown properties
+
+To add errors or warning to unkwnown properties, add the following to your Workspace's settings.json:
+
+```json
+"css.lint.unknownVendorSpecificProperties": "error"
+
+or
+
+"css.lint.unknownVendorSpecificProperties": "warning"
+```
+
+---
+
 **Enjoy!**
