@@ -3,12 +3,12 @@
   "displayName": "JavaFX CSS Support",
   "description": "JavaFX CSS support in Visual Studio Code.",
   "publisher": "bernardoamorim7",
-  "license": "MIT",
+  "license": "CC-BY-SA 4.0",
   "repository": {
     "url": "https://github.com/bernardoamorim7/javafx-css-support-vscode"
   },
   "icon": "icon.ico",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "engines": {
     "vscode": "^1.78.0"
   },

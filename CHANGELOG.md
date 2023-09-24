@@ -4,6 +4,11 @@ All notable changes to the "javafx-css-support" extension will be documented in 
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## v1.0.4
+
+- Updated README.md (Give credit to [@startball5](https://github.com/starball5)'s work)
+- Updated LICENSE to CC-BY-SA 4.0, according to the original work's license
+
 ## v1.0.3
 
 - Updated README.md (Fixed typo)

@@ -3,7 +3,7 @@
 Get JavaFX CSS support in Visual Studio Code.  
 Only JavaFX 17 is currently supported!
 
-The CSS properties were obtained using [@startball5](https://github.com/starball5)'s script, that he published [here](https://stackoverflow.com/a/75946319).
+The CSS properties were obtained using [@startball5](https://github.com/starball5)'s script, that he published [here](https://stackoverflow.com/a/75946319).  
 All credit goes to him! I only made it an extension for ease of use.
 
 ---
